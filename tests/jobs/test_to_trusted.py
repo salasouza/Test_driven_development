@@ -13,14 +13,12 @@ class ToTrustedTest(unittest.TestCase):
     #     pass
 
     def test_processo(self):
-# /opt/tatiane/agosto/projeto/tests/locallake/raw/alunos.csv
-# file:/opt/tatiane/agosto/projeto/tests/locallake/raw/alunos_diciplina.csv
 
         spark = SparkSession.builder.getOrCreate()
 
-        fr_path_al = '../projeto/tests/locallake/raw/alunos.csv'
-        fr_path_disc = '../projeto/tests/locallake/raw/alunos_diciplina.csv'
-        to_path = '../projeto/tests/locallake/trusted/alunos_salvos.csv'
+        fr_path_al = '../testdrivendev/tests/locallake/raw/alunos.csv'
+        fr_path_disc = '../testdrivendev/tests/locallake/raw/alunos_diciplina.csv'
+        to_path = '../testdrivendev/tests/locallake/trusted/alunos_salvos.csv'
         chamada = ToTrusted(fr_path_al,fr_path_disc,to_path)
         resultado = chamada.processa()
 

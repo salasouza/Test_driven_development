@@ -22,7 +22,8 @@ class ToTrusted:
         df_output.write.format('delta').mode('overwrite').save(self.to_path)
         # # # df.write(self.to_path)
         # print('deu certo')
-        return 1
+        print('Test Sucess')
+        #return 1
 
 ## CSV Aluno, CSV de disciplina
 #
