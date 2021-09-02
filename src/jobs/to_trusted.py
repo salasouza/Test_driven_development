@@ -1,11 +1,13 @@
 from pyspark.sql import SparkSession
+from src.commons.Abstrata import Abstrata
 
 
-class ToTrusted:
+class ToTrusted(Abstrata):
     def __init__(self, fr_path_al,fr_path_disc,to_path):
-        self.fr_path_al = fr_path_al
-        self.fr_path_disc = fr_path_disc
-        self.to_path = to_path
+        super(ToTrusted, self).__init__()
+        # self.fr_path_al = fr_path_al
+        # self.fr_path_disc = fr_path_disc
+        # self.to_path = to_path
 
     def processa(self):
         spark = SparkSession.builder.getOrCreate()

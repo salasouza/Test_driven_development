@@ -10,7 +10,7 @@ from src.jobs.to_trusted import ToTrusted
 class ToTrustedTest(unittest.TestCase):
 
     # def __init__(self):
-    #     pass
+    #      pass
 
     def test_processo(self):
 
